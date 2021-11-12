@@ -3,6 +3,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Put dummy variables within the builder
+//List<AccountDTO> accounts =
+//{
+//    //new AccountDto("bbrown", "Barry", "Brown", "bbrown@csus", new DateTime())
+
+//};
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
