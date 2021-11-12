@@ -18,6 +18,16 @@ namespace Ecommerce2.Web.Controllers
             return View();
         }
 
+        public IActionResult Shop()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

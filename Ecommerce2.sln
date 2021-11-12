@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce2.EF", "Ecommerce2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommcerce2.BE", "Ecommcerce2.BE\Ecommcerce2.BE.csproj", "{4E3E393B-ACED-4F06-BFE1-2094BD802B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce2.Web", "Ecommerce2.Web\Ecommerce2.Web.csproj", "{0FDA4C87-6F35-43F6-A001-5F0AE85EC734}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce2.Web", "Ecommerce2.Web\Ecommerce2.Web.csproj", "{0FDA4C87-6F35-43F6-A001-5F0AE85EC734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce2.API", "Ecommerce2.API\Ecommerce2.API.csproj", "{380DB362-9D4D-4A88-8A53-FD1DA279706A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce2.API", "Ecommerce2.API\Ecommerce2.API.csproj", "{380DB362-9D4D-4A88-8A53-FD1DA279706A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
