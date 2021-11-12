@@ -13,13 +13,14 @@ namespace Ecommerce2.Web.Controllers
         }
 
         // GET: AccountController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            var accounts = await _accountService.GetAllAccounts();
+            return View(accounts);
         }
 
         // GET: AccountController/Details/5
-        public async Task<IActionResult> Details(Guid id)
+        public async Task<IActionResult> Details(int id)
         {
             if (id == null) NotFound();
 

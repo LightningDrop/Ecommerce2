@@ -5,8 +5,9 @@ namespace Ecommerce2.Web.Models.DTOs
 {
     public class AccountDTO
     {
+        [Key]
         [Display(Name = "ID")]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Display(Name = "User Name")]
         public string UserName { get; set; }
@@ -27,8 +28,9 @@ namespace Ecommerce2.Web.Models.DTOs
 
 
         // May need to get rid of this in the future 
-        public AccountDTO(string UserName, string FirstName, string LastName, string Email, DateTime DateOfBirth)
+        public AccountDTO(int Id, string UserName, string FirstName, string LastName, string Email, DateTime DateOfBirth)
         {
+            this.Id = Id;
             this.UserName = UserName;
             this.FirstName = FirstName;
             this.LastName = LastName;

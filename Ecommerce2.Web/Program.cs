@@ -1,15 +1,14 @@
+using Ecommerce2.Web.Interface;
+using Ecommerce2.Web.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 // Put dummy variables within the builder
-//List<AccountDTO> accounts =
-//{
-//    //new AccountDto("bbrown", "Barry", "Brown", "bbrown@csus", new DateTime())
 
-//};
-
+builder.Services.AddSingleton<IAccountService>(new AccountService());
 
 var app = builder.Build();
 
