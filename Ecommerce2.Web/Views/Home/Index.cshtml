@@ -2,70 +2,45 @@
     ViewData["Title"] = "Home Page";
 }
 
-@section css {
-    <link href="@Url.Content("~/css/homeStyle.css")" rel="stylesheet"/>
+@section Scripts
+{
+    <script type="text/javascript" src="~/js/sliderScript.js"></script>
 }
 
-<!-- Slider -->
+@section css {
+    <link href="@Url.Content("~/css/site.css")" rel="stylesheet"/>
+    <link href="@Url.Content("~/css/sliderStyle.css")" rel="stylesheet"/>
+}
+
+<div class="title">
+    <h1 style="text-align: center">Awesome Art Supplies Galore!</h1>
+</div>
+
+<!-- SLIDER -->
 <div id="slider">
-  <div class="slides">
-    <div class="slider">
-      <div class="legend"></div>
-      <div class="content">
-        <div class="content-txt">
-          <h1>Lorem ipsum dolor</h1>
-          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-        </div>
-      </div>
-      <div class="image">
-        <img src="https://cdn.stocksnap.io/img-thumbs/960w/VVHE6VHMAW.jpg">
-      </div>
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+    <li ><img src="https://images.pexels.com/photos/2836955/pexels-photo-2836955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" /></li>
+    <li style="background: #aaa;"><img src="https://images.pexels.com/photos/983830/pexels-photo-983830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" /></li>
+    <li>SLIDE 3</li>
+    <li style="background: #aaa;">SLIDE 4</li>
+  </ul>  
+</div>
+
+<div class="slider_option">
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">Autoplay Slider</label>
+</div>
+
+<div class="quickLinks">
+    <div class="link_img">
+        <img src="https://images.pexels.com/photos/35202/eraser-office-supplies-office-office-accessories.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
     </div>
-    <div class="slider">
-      <div class="legend"></div>
-      <div class="content">
-        <div class="content-txt">
-          <h1>Lorem ipsum dolor</h1>
-          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-        </div>
-      </div>
-      <div class="image">
-        <img src="https://cdn.stocksnap.io/img-thumbs/960w/AKWVXIXFA8.jpg">
-      </div>
+    <div class="link_img">
+        <img src="https://images.pexels.com/photos/8386696/pexels-photo-8386696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
     </div>
-    <div class="slider">
-      <div class="legend"></div>
-      <div class="content">
-        <div class="content-txt">
-          <h1>Lorem ipsum dolor</h1>
-          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-        </div>
-      </div>
-      <div class="image">
-        <img src="https://cdn.stocksnap.io/img-thumbs/960w/TPLJK7JPRR.jpg">
-      </div>
+    <div class="link_img">
+        <img src="https://via.placeholder.com/200" />
     </div>
-    <div class="slider">
-      <div class="legend"></div>
-      <div class="content">
-        <div class="content-txt">
-          <h1>Lorem ipsum dolor</h1>
-          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
-        </div>
-      </div>
-      <div class="image">
-        <img src="https://cdn.stocksnap.io/img-thumbs/960w/XJ2BKV9ASS.jpg">
-      </div>
-    </div>
-  </div>
-  <div class="switch">
-    <ul>
-      <li>
-        <div class="on"></div>
-      </li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
 </div>

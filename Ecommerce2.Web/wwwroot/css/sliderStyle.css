@@ -1,0 +1,160 @@
+﻿body {
+    background-color: #202020;
+    color: white;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+h1 {
+    animation: glitch 2s;
+}
+
+.title
+{
+    text-align: center;
+}
+
+#slider 
+{
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+#slider ul 
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider ul li 
+{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev, a.control_next 
+{
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+.quickLinks {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.link_img {
+    padding: 10px;
+    max-width: 300px;
+    max-height: 100%;
+}
+
+/*
+ * The keyframes rule defines a CSS animation. It defines what styles
+ * the selected elements take on at certain times.
+ */
+@keyframes glitch {
+    /*
+   * Keyframes are defined by percentage, the length of the animation
+   * is defined in the animation property, see line 42 in h1 ruleset.
+   *
+   * Since the length of the animation is 1s, 0% is the start time (0s)
+   * 15% represents 15% of 1s (0.15s) and so on.
+   */
+    0% {
+        /* heading is hidden at this point */
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    15% {
+        /* text-shadow starts small */
+        text-shadow: 1px 1px #d92b6f, -1px -1px #047ab9;
+    }
+
+    35% {
+        /* text-shadow at max expansion */
+        text-shadow: 15px 15px #047ab9, -15px -15px #d92b6f;
+    }
+
+    65% {
+        /* text-shadow squeeze back but over shoots */
+        text-shadow: 1px 1px #d92b6f, -1px -1px #047ab9;
+    }
+
+    100% {
+        /* heading is fully revealed */
+        opacity: 1;
+        /* text-shadow's final position*/
+        text-shadow: 3px 3px #d92b6f, -3px -3px #047ab9;
+    }
+}
+
+/*
+ * A simpler keyframe rule, where 'from' is the same as 0%, and 'to' is the same
+ * as 100%
+ */
+@keyframes fade-in-up {
+    from {
+        transform: translateY(8pt);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

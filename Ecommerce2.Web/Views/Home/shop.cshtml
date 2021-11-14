@@ -2,14 +2,13 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
+@{
+    ViewData["Title"] = "Shop Page";
+}
+
 @section Scripts
 {
-    <script>
-        $(document).ready(function() {
-        $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-        $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-        });
-    </script>
+    <script type="text/javascript" src="~/js/shop.js"></script>
 }
 
 @section css 
@@ -29,7 +28,48 @@
     <div id="products" class="row list-group-horizontal">
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://via.placeholder.com/200" alt="" />
+                <img class="group list-group-image" style="max-width: 200px;" src="https://st.depositphotos.com/2219128/4810/i/950/depositphotos_48107875-stock-photo-two-color-eraser.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        A Cool Eraser!</h4>
+                    <p class="group inner list-group-item-text">
+                        Fantastic edition to your artistry arsenal! Worth every penny! Please buy!</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $55.23</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <button class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" style="max-width: 200px;" src="https://st.depositphotos.com/1741875/1378/i/600/depositphotos_13784614-stock-photo-pencil-isolated-on-pure-white.jpg" alt=""/>
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $87.12</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <button class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" style="max-width: 200px;" src="https://media.istockphoto.com/photos/ballpoint-pen-instrument-for-writing-picture-id154948399?k=20&m=154948399&s=612x612&w=0&h=L20Y9LN9k8yTN8SkU7IFdTs9kpyqQBvTHjfpjvjR-xs=" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Product title</h4>
@@ -50,49 +90,7 @@
         </div>
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://via.placeholder.com/200" alt=""/>
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.00</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <button class="btn btn-success">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="https://via.placeholder.com/200" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        Product title</h4>
-                    <p class="group inner list-group-item-text">
-                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                $21.00</p>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <button class="btn btn-success">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-                <img class="group list-group-image" src="https://via.placeholder.com/200" alt="" />
+                <img class="group list-group-image" style="max-width: 200px;" src="https://alexnld.com/wp-content/uploads/2018/09/a85fa9b4-a6ab-4992-af07-4184ab86b54c.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Product title</h4>
@@ -113,7 +111,7 @@
         </div>
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="https://via.placeholder.com/200" alt="" />
+                <img class="group list-group-image" style="max-width: 200px;" src="https://just4funpartyrentals.com/wp-content/uploads/2015/03/Easle.jpg" alt="" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         Product title</h4>
