@@ -1,0 +1,29 @@
+﻿@page
+@model Ecommerce2.Web.Razor.Pages.Accounts.ListModel
+@{
+}
+
+<h1>Accounts</h1>
+
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>UserName</th>
+        <th>Name</th>
+        <th>Date Of Birth</th>
+        <th>Age</th>
+    </tr>
+    @foreach (var account in Model.Accounts)
+    {
+        <tr>
+            <td>@account.Id</td>
+            <td>@account.UserName</td>
+            <td>@account.Name</td>
+            <td>@account.DateOfBirth</td>
+            <td>@account.Age</td>
+        </tr>
+
+    }
+</table>
+
