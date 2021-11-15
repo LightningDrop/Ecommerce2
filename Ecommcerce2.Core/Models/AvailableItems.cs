@@ -1,4 +1,4 @@
-﻿namespace Ecommcerce2.BE
+﻿namespace Ecommcerce2.Core.Models
 {
     public struct AvailableItems
     {

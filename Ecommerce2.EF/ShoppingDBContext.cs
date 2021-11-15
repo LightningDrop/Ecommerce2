@@ -1,5 +1,4 @@
-﻿using Ecommcerce2.BE;
-using Ecommcerce2.BE.Models;
+﻿using Ecommcerce2.Core.Models;
 using System.Data.Entity;
 
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Ecommcerce2.BE
+namespace Ecommcerce2.Core.Models
 {
     public class ShoppingList
     {

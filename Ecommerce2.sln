@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce2.EF", "Ecommerce2.EF\Ecommerce2.EF.csproj", "{1C3793FF-8837-4B1B-B83F-505C4E6F8539}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommcerce2.Core", "Ecommcerce2.BE\Ecommcerce2.Core.csproj", "{4E3E393B-ACED-4F06-BFE1-2094BD802B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommcerce2.Core", "Ecommcerce2.Core\Ecommcerce2.Core.csproj", "{4E3E393B-ACED-4F06-BFE1-2094BD802B70}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce2.API", "Ecommerce2.API\Ecommerce2.API.csproj", "{380DB362-9D4D-4A88-8A53-FD1DA279706A}"
 EndProject
