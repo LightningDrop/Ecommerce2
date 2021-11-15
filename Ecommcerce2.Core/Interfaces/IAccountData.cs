@@ -6,6 +6,7 @@ namespace Ecommcerce2.Core.Interfaces
     {
         Task<IEnumerable<Account>> GetAll();
         Task<Account> Get(int id);
+
         //Task Delete(int id);
     }
 }

@@ -12,8 +12,8 @@ namespace Ecommcerce2.Core.Services
         private int genID = 0;
 
         // This exposes a path that shouldn't be exposed ... find better implementation 
-        private string NAMES_PATH_JSON = @"C:\Users\AccedeoPix\source\repos\LightningDrop\Ecommerce2\Ecommcerce2.BE\StaticData\Names.json";
-        private string USERNAMES_PATH_JSON = @"C:\Users\AccedeoPix\source\repos\LightningDrop\Ecommerce2\Ecommcerce2.BE\StaticData\UserNames.json";
+        private string NAMES_PATH_JSON = @"C:\Users\AccedeoPix\source\repos\LightningDrop\Ecommerce2\Ecommcerce2.Core\StaticData\Names.json";
+        private string USERNAMES_PATH_JSON = @"C:\Users\AccedeoPix\source\repos\LightningDrop\Ecommerce2\Ecommcerce2.Core\StaticData\UserNames.json";
         private Random rng = new Random();
 
 

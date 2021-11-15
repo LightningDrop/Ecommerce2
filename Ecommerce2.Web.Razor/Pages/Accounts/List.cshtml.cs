@@ -17,6 +17,7 @@ namespace Ecommerce2.Web.Razor.Pages.Accounts
         public async void OnGet()
         {
             Accounts = await _accountData.GetAll();
+
         }
     }
 }
