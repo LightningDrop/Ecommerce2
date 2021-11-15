@@ -1,8 +1,8 @@
 ﻿namespace Ecommcerce2.BE
 {
-    public struct ShoppingItems
+    public struct AvailableItems
     {
-        public ShoppingItems(string Name, string Description, double Price, int Quantity)
+        public AvailableItems(string Name, string Description, double Price, int Quantity)
         {
             this.Name = Name;
             this.Description = Description;

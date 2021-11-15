@@ -8,9 +8,10 @@ namespace Ecommcerce2.BE
         public int ShoppingListId { get; set; }
 
         [Required]
+        [MaxLength(50)]
         public string? TypeOfList { get; set; }
 
         [Required]
-        public List<ShoppingItems>? Items { get; set; }
+        public List<AvailableItems>? Items { get; set; }
     }
 }

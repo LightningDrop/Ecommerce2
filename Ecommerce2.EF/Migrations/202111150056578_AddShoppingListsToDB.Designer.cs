@@ -13,7 +13,7 @@ namespace Ecommerce2.EF.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202111120504193_AddShoppingListsToDB"; }
+            get { return "202111150056578_AddShoppingListsToDB"; }
         }
         
         string IMigrationMetadata.Source
